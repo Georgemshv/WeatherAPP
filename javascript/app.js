@@ -79,7 +79,6 @@ const classlistFunction = () =>{
 submit.addEventListener("click", () =>{
      WeatherAPI("http://api.openweathermap.org/data/2.5/weather?q="+ input.value +"&units=metric"+ "&appid="+ key)
         .then(response =>{
-          console.log(response)
           draw(response)
           classlistFunction();
         })
