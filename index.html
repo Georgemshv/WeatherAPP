@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Facebook Meta Tags-->
+    <meta property="og:url"    content="#" />
+<meta property="og:type"  content="article" />
+<meta property="og:title" content="ამინდი" />
+<meta property="og:description"    content="ამინდის პროგნოზი" />
+<meta property="og:image"content="https://eskipaper.com/images/weather-wallpaper-4.jpg" />
+    <!--Head Icon-->
+    <link rel="shortcut icon" href="images/weather.png" type="image/x-icon">
+    <title>Weather App</title>
+    <!--Weather style-->
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/snowflake.css">
+    <link rel="stylesheet" href="style/global.css">
+</head>
+<body>
+     <!--Snow-->
+     <div class="snowflakes none" aria-hidden="true">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+    </div>
+    <section>
+        <div class="container J-Center">
+            <h1 class="alk-font">ამინდი</h1>
+            <input id="name" type="text" placeholder="City , Country">
+            <button id="click" type="button">Submit</button>
+            <div class="weather-box none">
+                <h5 class="h5"></h5>
+                <div class="Flex rm">
+                    <div class="text-box">
+                        <p class="wh2 alk-font"></p>
+                        <p class="wh alk-font"></p>
+                        <p class="wind-speed alk-font"></p>
+                        <div class="stick"></div>
+                        <p class="sens alk-font"></p>
+                        <p class="Temperature alk-font"></p>
+                        <p class="Temperature-mn alk-font"></p>
+                        <p class="Temperature-mx alk-font"></p>
+                        <p class="country alk-font"></p>
+                    </div>
+                    <div class="snow-box"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
