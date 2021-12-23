@@ -45,24 +45,24 @@ const draw = (json_text) =>{
 
     function dom(response){
         if(response.snow){
-            snowBox.style.backgroundImage = "url('../images/snowflake.png')"
-            cont.style.backgroundImage = "url('../images/snow.jpg')"
+            snowBox.style.backgroundImage = "url('images/snowflake.png')"
+            cont.style.backgroundImage = "url('images/snow.jpg')"
             snowflakes.classList.remove('none')
         }
         else if(response.main.temp < "5"){
-            snowBox.style.backgroundImage = "url('../images/temperatures.png')"
-            cont.style.backgroundImage = "url('../images/cold.jpg')"
+            snowBox.style.backgroundImage = "url('images/temperatures.png')"
+            cont.style.backgroundImage = "url('images/cold.jpg')"
             snowflakes.classList.add('none')
         } 
         else if(response.main.temp < "20"){
-            snowBox.style.backgroundImage = "url('../images/wind.png')"
-            cont.style.backgroundImage = "url('../images/nature.jpg')"
+            snowBox.style.backgroundImage = "url('images/wind.png')"
+            cont.style.backgroundImage = "url('images/nature.jpg')"
             snowflakes.classList.add('none')
             
         }
         else if(response.main.temp <= "40"){
-            snowBox.style.backgroundImage = "url('../images/sun.png')"
-            cont.style.backgroundImage = "url('../images/sum.jpg')"
+            snowBox.style.backgroundImage = "url('images/sun.png')"
+            cont.style.backgroundImage = "url('images/sum.jpg')"
             snowflakes.classList.add('none')
         }
         else{
