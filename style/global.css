@@ -1,0 +1,152 @@
+body{
+    overflow: hidden;
+}
+.Flex{
+    display: flex;
+}
+.J-Center{
+    justify-content: center;
+}
+.container{
+    height: 100vh;
+    background-image: url("../images/default.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 50px 50px;
+}
+.container , .weather-box{
+    flex-direction: column;
+}
+#name , #click {
+    color: white;
+    background-color: rgba(50, 87, 91, 0.719);
+}
+.weather-box h5 , h1 , .weather-box p{
+    color: white;
+}
+#name{
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+#click{
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bolder;
+    width: 200px;
+    height: 60px;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+h1{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.weather-box{
+    width: 650px;;
+    background: rgba(50, 51, 91, 0.719);
+    display: flex;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+.weather-box h5{
+    font-size: 40px;
+    text-align: center;
+}
+.weather-box p{
+    margin-top: 20px;
+}
+.stick{
+    background-color: white;
+    height: 1px;
+    width: 50px;
+    margin: 20px 0;
+}
+.text-box{
+    padding: 40px 40px;
+}
+.none{
+    display: none;
+}
+.snow-box{
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    margin-left: 50px;
+    transition: all 0.6s;
+    animation: circle 5s infinite alternate;
+}
+@keyframes circle {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/*responsive*/
+@media(max-width: 900px){
+    .weather-box{
+        max-width: 550px;
+        width: 100%;
+    }
+}
+@media(max-width: 600px){
+    .rm , .text-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .snow-box{
+        margin: 0;
+    }
+    .text-box{
+        padding: 20px 30px;
+        width: 100%;
+        display: flex;
+    }
+    h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .container{
+        padding: 10px 50px 50px 50px;
+    }
+    .snow-box{
+        width: 50px;
+        height: 50px;
+    }
+    .weather-box h5{
+        font-size: 25px;
+    }
+    .weather-box p{
+        line-height: 20px;
+    }
+}
+@media(max-width: 420px){
+    .snow-box{
+        display: none;
+    }
+    .stick{
+        margin: 10px 0;
+    }
+}
+@media(max-height: 640px){
+    .weather-box p{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    h1{
+        display: none;
+    }
+}
+@media(max-height: 510px){
+    .snow-box{
+        display: none;
+    }
+}
